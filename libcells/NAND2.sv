@@ -4,8 +4,8 @@ module NAND2 (
     output logic Z
 );
 
-parameter Tpdlh = 1;
-parameter Tpdhl = 1;
+parameter Tpdlh = 8;
+parameter Tpdhl = 8;
 
 nand #(Tpdlh, Tpdhl) nand1 (Z, A, B);
 
