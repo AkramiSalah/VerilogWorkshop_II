@@ -11,6 +11,7 @@ module fas (
 // Put your code here
 // ------------------
 
+logic g1_out, g2_out, g3_out, g4_out, g7_out;
 
 XNOR2 #(.Tpdlh(2), .Tpdhl(2)) g1 (.A(b),      .B(cin),    .Z(g1_out));
 XNOR2 #(.Tpdlh(2), .Tpdhl(2)) g4 (.A(a),      .B(a_ns),   .Z(g4_out));
