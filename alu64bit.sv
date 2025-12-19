@@ -18,10 +18,10 @@ generate
         alu1bit alu_inst (
             .a(a[i]),
             .b(b[i]),
-            .cin(carries[i]),    // ה-cin מגיע מהיחידה הקודמת
-            .op(op),             // ה-op משותף לכל היחידות
+            .cin(carries[i]),    
+            .op(op),             
             .s(s[i]),
-            .cout(carries[i+1])  // ה-cout עובר ליחידה הבאה
+            .cout(carries[i+1])  
         );
     end
 endgenerate
