@@ -4,8 +4,8 @@ module OR2 (
     output logic Z
 );
 
-parameter Tpdlh = 1;
-parameter Tpdhl = 1;
+parameter Tpdlh = 5;
+parameter Tpdhl = 5;
 
 or #(Tpdlh, Tpdhl) or1 (Z, A, B);
 

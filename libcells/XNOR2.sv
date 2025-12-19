@@ -4,8 +4,8 @@ module XNOR2 (
     output logic Z
 );
 
-parameter Tpdlh = 1;
-parameter Tpdhl = 1;
+parameter Tpdlh = 2;
+parameter Tpdhl = 2;
 
 xnor #(Tpdlh, Tpdhl) xnor1 (Z, A, B);
 
