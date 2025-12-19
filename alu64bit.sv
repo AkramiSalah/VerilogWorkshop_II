@@ -14,14 +14,15 @@ logic [64:0] carry_array;
 
 genvar i;
 generate
-    for (i = 0; i < 64; i = i + 1) begin : gen_alu
-        alu1bit alu_inst (
+    for (i = 0; i < 64; i = i + 1) 
+    begin
+        alu1bit alu (
             .a(a[i]),
             .b(b[i]),
-            .cin(carries[i]),    
+            .cin(carry_array[i]),    
             .op(op),             
             .s(s[i]),
-            .cout(carries[i+1])  
+            .cout(carry_array[i+1])  
         );
     end
 endgenerate
