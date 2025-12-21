@@ -13,11 +13,11 @@ module mux4 (
 	logic mux_up_res;
 	logic mux_down_res;
 	
-    mux2 #(.Tpdlh(8), .Tpdhl(8)) mux_up (.d0(d0),   .d1(d1), .sel(sel[0]),   .z(mux_up_res));
+    mux2 mux_up (.d0(d0),   .d1(d1), .sel(sel[0]),   .z(mux_up_res));
 
-    mux2 #(.Tpdlh(8), .Tpdhl(8)) mux_down (.d0(d2), .d1(d3), .sel(sel[0]), .z(mux_down_res));
+    mux2 mux_down (.d0(d2), .d1(d3), .sel(sel[0]), .z(mux_down_res));
 
-    mux2 #(.Tpdlh(8), .Tpdhl(8)) mux_right(.d0(mux_up_res), .d1(mux_down_res), .sel(sel[1]), .z(z));
+    mux2 mux_right(.d0(mux_up_res), .d1(mux_down_res), .sel(sel[1]), .z(z));
 
 // End of your code
 
