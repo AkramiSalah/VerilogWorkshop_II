@@ -26,13 +26,11 @@ initial begin
     cin = 1'b0;
     op = 2'b00;
 
-    #1364
+    #1364;
 
-    op = 2b'01;
+    op = 2'b01;
 
-    #1364
-
-
+    #1364;
 end
 
 // End of your code
