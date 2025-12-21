@@ -23,7 +23,7 @@ NAND2 g7 (.A(g3_out), .B(g4_out), .Z(g7_out));
 NAND2 g6 (.A(g2_out), .B(g7_out), .Z(cout));
 
 
-OR2   #(.Tpdlh(5), .Tpdhl(5)) g3 (.A(b), .B(cin), .Z(g3_out));
+OR2 g3 (.A(b), .B(cin), .Z(g3_out));
 // End of your code
 
 endmodule
