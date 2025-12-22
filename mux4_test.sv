@@ -25,6 +25,8 @@ initial begin
     d2 = 1'b0;
     d3 = 1'b0;
     sel = 2'b00;
+    z = 1'b0;
+    
     #32;
     d0 = 1'b1;
 
