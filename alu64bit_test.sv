@@ -21,16 +21,17 @@ alu64bit tester(
 );
 
 initial begin
-    a = 64'hFFFFFFFFFFFFFFFF;
-    b = 64'h0000000000000001;
+    a = {64{1'b0}};
+    b = {64{1'b0}};
+    b[0] = 1; 
     cin = 1'b0;
-    op = 2'b00;
+    op = 2'b10;
 
-    #1364;
+    #2000;
 
-    op = 2'b01;
+    op = 2'b11;
 
-    #1364;
+    #2000;
 end
 
 // End of your code

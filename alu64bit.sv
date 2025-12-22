@@ -11,6 +11,7 @@ module alu64bit (
 // Put your code here
 // ------------------
 logic [64:0] carry_array;
+assign carry_array[0] = cin;
 
 genvar i;
 generate
