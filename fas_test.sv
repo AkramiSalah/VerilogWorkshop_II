@@ -25,7 +25,9 @@ module fas_test;
         b = 1'b0;
         cin = 1'b0;
         a_ns = 1'b0;
-
+        s = 1'b0;
+        cout = 1'b0;
+        
         #21;
         a = 1'b1;
 
