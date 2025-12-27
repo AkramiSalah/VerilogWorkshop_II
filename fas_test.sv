@@ -23,18 +23,16 @@ module fas_test;
     initial begin
         a = 1'b0;
         b = 1'b0;
-        cin = 1'b0;
-        a_ns = 1'b0;
-        s = 1'b0;
-        cout = 1'b0;
+        cin = 1'b1;
+        a_ns = 1'b1;
         
-        #21;
+        #50;
         a = 1'b1;
 
-        #21;
+        #50;
         a = 1'b0;
 
-        #21;
+        #50;
     end
 
 // End of your code
